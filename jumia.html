@@ -1,0 +1,1557 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia</title>
+    <link rel="stylesheet" href="jumia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body class="whole">
+    <!-- <header class="navbar navbar-expand-sm bg-light">
+
+        <div class="jumiabar">
+            <div class="jumialogo">
+                <img src="./Products/jumia logo3.png" alt="" width="100" srcset="">
+            </div>
+            <div class="searchicon">
+                <i class="fa-solid fa-magnifying-glass Search"></i>
+                 <input type="text" id="tarea" placeholder="Search Products,brands and categories">
+            </div>
+               <button type="submit" class="navbtn">Search</button>
+                
+
+             <div class="jumialinks">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>Account
+                        </a>
+                    </li>
+                    <li><a href=""></a></li>
+                    <li><a href=""><i class="fa-solid fa-question"></i>Help</a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                </ul>
+             </div>
+        </div>
+        
+    </header> -->
+    <nav class="navbar navbar-expand-lg bg-light mynav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./Products/jumia logo3.png" alt="" width="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex search-bar" role="search">
+          <i class="fa-solid fa-magnifying-glass Search"></i> <input class="form-control me-2" type="search" placeholder="Search products, brands and categories" aria-label="Search" id="tarea">
+          <button class="btn" type="submit" id="button">Search</button>
+        </form>
+        <div class="collapse navbar-collapse navlink" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0 navitem">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-user"></i> Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><button class="bunt">Sign In</button></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-question"></i> Help
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">
+                <i class="fa-solid fa-cart-shopping"></i>Cart
+              </a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+  
+     <section class="section1">
+      <div class="jumia-products">
+          <ul>
+              <li><a href="#"><i class="fa-solid fa-apple-whole" ></i>Supermarket</a></li>
+              <li><a href="#"><i class="fa-solid fa-mars-stroke-up"></i>Health & Beauty</a></li>
+              <li><a href="#"><i class="fa-solid fa-house"></i>Home & Office</a></li>
+              <li><a href="#"><i class="fa-solid fa-plate-wheat"></i>Appliances</a></li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i>Phone & Tablets</a></li>
+              <li><a href="#"><i class="fa-solid fa-computer"></i>Computing</a></li>
+              <li><a href="#"><i class="fa-solid fa-radio"></i>Electronics</a></li>
+              <li><a href="#"><i class="fa-solid fa-shirt"></i>Fashion</a></li>
+              <li><a href="#"><i class="fa-solid fa-baby"></i>Baby Products</a></li>
+              <li><a href="#"><i class="fa-solid fa-gamepad"></i>Gaming</a></li>
+              <li><a href="#"><i class="fa-solid fa-basketball"></i>Sporting Goods</a></li>
+              <li><a href="#"><i class="fa-regular fa-circle"></i>Other Categories</a></li>
+          </ul>
+      </div>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
+
+          <!-- Indicators/dots -->
+           <div class="carousel-indicators">
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+            <button id="btn" type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+
+          </div>
+        
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Products/6-6_Deals_712x384.jpg" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/712_X_384.jpg" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/anniversary.png" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/Artboard_1.png" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/Desktop_Homepage_Slider__712x384.jpg" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/special offer.png" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/Mytery-teaser-712x384_REAL.gif" alt="" class="d-block w-100" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="./Products/Desktop_Homepage_Slider__712x384.png" alt="" class="d-block w-100" height="100%">
+            </div>
+          </div>
+         
+          <!-- Left and right controls/icons -->
+          <button id="btn2" class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button id="btn2" class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        
+
+  </div>
+      <div class="jumia-care">
+          <div class="jumia-contact">
+           <ul> 
+              <li>
+                  <h4><a href="#">CALL TO ORDER</a></h4>
+                  <a href="#">0700-600-0000,0201888...</a>
+              </li>
+              <li>
+                 <h4><a href="#">Sell on Jumia</a></h4>
+              </li>
+              <li>
+                  <h4><a href="#">Best Deals</a></h4>
+              </li>
+              
+           </ul>
+          </div>
+          <div class="jumia-ad">
+             <img src="./Products/shop_earn.png" alt="" width="100%" height="100%">
+          </div>
+      </div>
+  </section>
+ <section class="section2 bg-light">
+   <div class="hd">
+    <div class="container">
+      <div class="row headd">
+        <div class="col">
+          <a href="#"><img src="./Products/clearance.png" alt="" width="80%" height="80%"></a>
+          <a href="#"><p>Clearance sale</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/aniversary offer.gif" alt="" width="80%" height="80%"></a>
+          <a href="#"><p>Anniversary Offers</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/special offer.png" alt=""  width="80%" height="80%"></a>
+          <a href="#"><p>Special Offers</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/phones deal.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Phones & Tablets Deals</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/appliances deal.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Appliances Deals</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/sneaker.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Men's Sneakers</p></a>
+        </div>
+      </div>
+      <div class="row headd">
+        <div class="col">
+          <a href="#"><img src="./Products/electronic.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Electronic Deals</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/mobile access.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Mobile Accessories</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/buy naw.gif" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Buy Now, Pay Later</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/beauty.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Beauty Deals</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/home essencial.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Home Essentials</p></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="./Products/grocery.png" alt="" width="70%" height="70%"></a>
+          <a href="#"><p>Grocery Deals</p></a>
+        </div>
+      </div>
+     </div>
+   </div>
+ </section>
+
+ <section class="section3 bg-light">
+       <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="#" class="anchor">
+              <img src="./Products/12.gif" alt="" width="100%" height="100%">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="anchor">
+              <img src="./Products/13.gif" alt="" width="100%" height="100%">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="anchor">
+              <img src="./Products/14.gif" alt="" width="100%" height="100%">
+            </a>
+          </div>
+        </div>
+       </div>
+ </section>
+ <section class="section4 bg-light">
+  <div class="tarea">
+    <h4>Sponsored Products</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/watch.jpg" alt="" width="150px" height="150px">
+        Fngeen Top Luxury Mechanical Watch
+        <h6>&#8358;9,850</h6>
+        <p class="slash">&#8358;12,599</p>
+        <p class="top">-13%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/foundation.jpg" alt="" width="150px" height="150px">
+        Maybelline Fit Me Matte And Poreless Foundation 30 Ml 356...
+        <h6>&#8358;8,830</h6>
+        <p class="slash">&#8358;11,830</p>
+        <p class="top">-25%</p>
+        </a>
+      </div>
+      <div class="col">
+       <a href="#" class="anchor">
+        <img src="./Products/brush.jpg" alt="" width="150px" height="150px">
+        BRUSH CUTTER GRASS C...
+        <h6>&#8358;97,900</h6>
+        <p class="slash">&#8358;143,500</p>
+        <p class="top">-19%</p>
+       </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/keyboard.jpg" alt="" width="150px" height="150px">
+        TopMate Wireless Keyboard And Mouse Ultra Slim Combo, TopMat...
+        <h6>&#8358;30,700</h6>
+        <p class="slash">&#8358;39,999</p>
+        <p class="top">-23%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/office shoe.jpg" alt="" width="150px" height="150px">
+        Men Oxfords Office Loafers PU Suede Wedding Formal Chelsea...
+        <h6>&#8358;21,900</h6>
+        <p class="slash">&#8358;28,000</p>
+        <p class="top">-22%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/probook.jpg" alt="" width="150px" height="150px">
+        Hp ProBook 11 X360-TOUCH- 128GB SSD/4GB RAM-Intel...
+        <h6>&#8358;198,000</h6>
+        <p class="slash">&#8358;349,000</p>
+        <p class="top">-43%</p>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+ </section>
+
+ <section class="section6 bg-light">
+    <div class="container">
+     <div class="row">
+       <div class="col">
+         <a href="#" class="anchor">
+           <img src="./Products/screens.png" alt="" width="100%" height="100%">
+         </a>
+       </div>
+       <div class="col">
+         <a href="#" class="anchor">
+           <img src="./Products/fashion.png" alt="" width="100%" height="100%">
+         </a>
+       </div>
+     </div>
+    </div>
+ </section>
+
+ <section class="section5 bg-light">
+  <div class="tarea1">
+    <h4>Jumia Festival Deals</h4>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/tecno.jpg" alt="" width="150px" height="150px">
+          Tecno Spark 20 (KJ5) 6.6"...
+          <h6>&#8358;174,730</h6>
+          <p class="slash">&#8358;250,000</p>
+          <p class="top">-30%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/tutu.jpg" alt="" width="150px" height="150px">
+          Tutu 43" Inches Smart LE...
+          <h6>&#8358;205,000</h6>
+          <p class="slash">&#8358;215,000</p>
+          <p class="top">-5%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/haier.jpg" alt="" width="150px" height="150px">
+          Haier Thermocool 200 Lit...
+          <h6>&#8358;349,000</h6>
+          <p class="slash">&#8358;359,000</p>
+          <p class="top">-3%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/itel powerlitr.jpg" alt="" width="150px" height="150px">
+          itel PowerLite 20000mAh...
+          <h6>&#8358;13,000</h6>
+          <p class="slash">&#8358;28,000</p>
+          <p class="top">-54%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/adidas.jpg" alt="" width="150px" height="150px">
+          ADIDAS Sports Performa...
+          <h6>&#8358;36,045</h6>
+          <p class="slash">&#8358;51,493</p>
+          <p class="top">-30%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/belts.jpg" alt="" width="150px" height="150px">
+          2 Pieces Leather Automat...
+          <h6>&#8358;5,759</h6>
+          <p class="slash">&#8358;8,999</p>
+          <p class="top">-36%</p>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/kettle.jpg" alt="" width="150px" height="150px"> 
+          Syinix Electric Kettle 2.2L...
+          <h6>&#8358;5,990</h6>
+          <p class="slash">&#8358;7,800</p>
+          <p class="top">-23%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/finewine.jpg" alt="" width="150px" height="150px">
+          William Lawson's Finest B...
+          <h6>&#8358;11,500</h6>
+          <p class="slash">&#8358;13,500</p>
+          <p class="top">-15%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/ecoflow.jpg" alt="" width="150px" height="150px">
+          ECOFLOW Portable Power...
+          <h6>&#8358;574,440</h6>
+          <p class="slash">&#8358;710,761</p>
+          <p class="top">-19%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/knorr.jpg" alt="" width="150px" height="150px">
+          Knorr Triple Goodness Co...
+          <h6>&#8358;3,645</h6>
+          <p class="slash">&#8358;4,985</p>
+          <p class="top">-27 %</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/ace.jpg" alt="" width="150px" height="150px">
+          Ace Elec 20000 MAh Utra...
+          <h6>&#8358;8,200</h6>
+          <p class="slash">&#8358;12,000</p>
+          <p class="top">-32%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/burner.jpg" alt="" width="150px" height="150px">
+          Skyrun 4 Burners（4+0)...
+          <h6>&#8358;129,900</h6>
+          <p class="slash">&#8358;150,000</p>
+          <p class="top">-13%</p>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/itel 1.83 smart watch.jpg" alt="" width="150px" height="150px">
+          itel 1.83'' Sones Smart Wa...
+          <h6>&#8358;13,900</h6>
+          <p class="slash">&#8358;50,000</p>
+          <p class="top">-72%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/signature.jpg" alt="" width="150px" height="150px">
+          Osc Signature MENS Qua...
+          <h6>&#8358;4,099</h6>
+          <p class="slash">&#8358;6,496-&#8358;6,500</p>
+          <p class="top">-37%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/nivea.jpg" alt="" width="150px" height="150px">
+          NIVEA DoShakara Pack -...
+          <h6>&#8358;9,240</h6>
+          <p class="slash">&#8358;11,550</p>
+          <p class="top">-20%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/racks.jpg" alt="" width="150px" height="150px">
+          Shoe Rack Stackable Asse...
+          <h6>&#8358;7,488</h6>
+          <p class="slash">&#8358;12,999</p>
+          <p class="top">-42%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/binbond.jpg" alt="" width="150px" height="150px">
+          Binbond Men's Watch Fas...
+          <h6>&#8358;11,495</h6>
+          <p class="slash">&#8358;15,195</p>
+          <p class="top">-24%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/oraimo.jpg" alt="" width="150px" height="150px">
+          Oraimo Traveler 15 Flash ...
+          <h6>&#8358;16,500</h6>
+          <p class="slash">&#8358;24,000</p>
+          <p class="top">-31%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section class="section7 bg-light">
+  <div class="tarea2">
+    <h4>Skyrun Week</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/sky.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/run.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/week.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+   </div>
+ </section>
+ <section class="section8 bg-light">
+  <div class="tarea3">
+    <h4>Skyrun Week</h4>  
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+        <img src="./Products/chest.jpg" alt="" width="150px" height="150px">
+        Skyrun 100L Chest Freeze...
+        <h6>&#8358;199,900</h6>
+        <p class="slash">&#8358;210,550</p>
+        <p class="top">-5%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/4burner.jpg" alt="" width="150px" height="150px">
+          Skyrun 4 Burners（4+0)...
+          <h6>&#8358;129,900</h6>
+          <p class="slash">&#8358;150,000</p>
+          <p class="top">-13%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/freezer.jpg" alt="" width="150px" height="150px">
+          Skyrun 145L Chest Freeze...
+          <h6>&#8358;222,500</h6>
+          <p class="slash">&#8358;235,750</p>
+          <p class="top">-6%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/3burner.jpg" alt="" width="150px" height="150px">
+          Skyrun 3 Burners+1 Electr...
+          <h6>&#8358;149,900</h6>
+          <p class="slash">&#8358;161,143</p>
+          <p class="top">-7%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/double.jpg" alt="" width="150px" height="150px">
+          Skyrun 118L Double Door...
+          <h6>&#8358;225,250</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/twin.jpg" alt="" width="150px" height="150px">
+          Skyrun 6kg Twin Tub Sem...
+          <h6>&#8358;139,900</h6>
+          <p class="slash">&#8358;150,393</p>
+          <p class="top">-7%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </section>
+ 
+ <section class="section9 bg-light">
+  <div class="container"> 
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/budget.jpg" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/buy.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+ </section>
+ <Section class="section10 bg-light">
+  <div class="tarea4">
+    <h4>Best Sellers</h4>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/fan.jpg" alt="" width="150px" height="150px">
+           Ace Elec 8.7 inches Recha...
+           <h6>&#8358;6,500</h6>
+           <p class="slash">&#8358;15,294</p>
+           <p class="top">-57%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/Underwear.jpg" alt="" width="150px" height="150px">
+           6 PCS Men Underwear U...
+           <h6>&#8358;3,964</h6>
+           <p class="slash">&#8358;8,300</p>
+           <p class="top">-52%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/shoes.jpg" alt="" width="150px" height="150px">
+           2024 Men's Casual Shoes...
+           <h6>&#8358;11,932 - &#8358;12,857</h6>
+           <p class="slash">&#8358;17,458</p>
+           <p class="top">-32%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/refillable.jpg" alt="" width="150px" height="150px">
+           Mini Portable Refillable S...
+           <h6>&#8358;1,499</h6>
+           <p class="slash">&#8358;4,112</p>
+           <p class="top">-64%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/star.jpg" alt="" width="150px" height="150px">
+           100pcs 3D Stars Glow In...
+           <h6>&#8358;2,871</h6>
+           <p class="slash">&#8358;4,000</p>
+           <p class="top">-28%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/flash.jpg" alt="" width="150px" height="150px">
+          128 GB Metal Usb Flash...
+           <h6>&#8358;7,129</h6>
+           <p class="slash">&#8358;10,407</p>
+           <p class="top">-31%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+ <section class="section11 bg-light">
+  <div class="tarea5">
+    <h4>Decorate Your Perfect Space</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/home-decor-dtb.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/chandeliers-dtb.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/beddings-dtb.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+   </div>
+ </section>
+ <Section class="section12 bg-light">
+  <div class="tarea6">
+    <h6>Decorate Your Perfect Space</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/fan.jpg" alt="" width="150px" height="150px">
+           Ace Elec 8.7 inches Recha...
+           <h6>&#8358;6,500</h6>
+           <p class="slash">&#8358;15,294</p>
+           <p class="top">-57%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/Underwear.jpg" alt="" width="150px" height="150px">
+           6 PCS Men Underwear U...
+           <h6>&#8358;3,964</h6>
+           <p class="slash">&#8358;8,300</p>
+           <p class="top">-52%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/shoes.jpg" alt="" width="150px" height="150px">
+           2024 Men's Casual Shoes...
+           <h6>&#8358;11,932 - &#8358;12,857</h6>
+           <p class="slash">&#8358;17,458</p>
+           <p class="top">-32%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/refillable.jpg" alt="" width="150px" height="150px">
+           Mini Portable Refillable S...
+           <h6>&#8358;1,499</h6>
+           <p class="slash">&#8358;4,112</p>
+           <p class="top">-64%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/star.jpg" alt="" width="150px" height="150px">
+           100pcs 3D Stars Glow In...
+           <h6>&#8358;2,871</h6>
+           <p class="slash">&#8358;4,000</p>
+           <p class="top">-28%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/flash.jpg" alt="" width="150px" height="150px">
+           128 GB Metal Usb Flash...
+           <h6>&#8358;7,129</h6>
+           <p class="slash">&#8358;10,407</p>
+           <p class="top">-31%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+ <section class="section13 bg-light">
+  <div class="tarea7">
+    <h4>Official Stores</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/tec.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/ora.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/infinix.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/nivea.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/mi.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/it.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+    <div class="row" id="dis">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/up.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/thermo.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/diago.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/jameson.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/bacardi.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/eco.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+   </div>
+ </section>
+
+ <section class="section14 bg-light">
+  <div class="tarea8">
+    <h5>Oraimo Store</h5>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/blackraim.jpg" alt="" width="150px" height="150px">
+           Oraimo FreePods Lite 40-...
+           <h6>&#8358;19,927</h6>
+           <p class="slash">&#8358;30,000</p>
+           <p class="top">-34%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/greenraim.jpg" alt="" width="150px" height="150px">
+           Oraimo FreePods Lite 40-...
+           <h6>&#8358;21,100</h6>
+           <p class="slash">&#8358;35,640</p>
+           <p class="top">-41%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/freepods.jpg" alt="" width="150px" height="150px">
+           Oraimo FreePods 3C ENC...
+           <h6>&#8358;11,932 - &#8358;34,889</h6>
+           <p class="slash">&#8358;77,959</p>
+           <p class="top">-55%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/active.jpg" alt="" width="150px" height="150px">
+           Oraimo FreePods 4 Active...
+           <h6>&#8358;43,250</h6>
+           <p class="slash">&#8358;106,163</p>
+           <p class="top">-59%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/riff.jpg" alt="" width="150px" height="150px">
+           Oraimo Riff 2 ENC True W...
+           <h6>&#8358;27,670</h6>
+           <p class="slash">&#8358;31,244</p>
+           <p class="top">-11%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/fast.jpg" alt="" width="150px" height="150px">
+          Oraimo Fast Charging Slic...
+           <h6>&#8358;16,959</h6>
+           <p class="slash">&#8358;23,686</p>
+           <p class="top">-28%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section15 bg-light">
+    <div class="tarea9">
+      <h4>Appliances Deals</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="anchor">
+            <img src="./Products/AirCon_378x252.jpg" alt="" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="anchor">
+            <img src="./Products/Kettle_378x252.jpg" alt="" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="anchor">
+            <img src="./Products/Washing-Machine_378x252.jpg" alt="" width="100%" height="100%">
+          </a>
+        </div>
+      </div>
+    </div>
+ </section>
+ <Section class="section16 bg-light">
+  <div class="tarea10">
+    <h6>Appliances Deals</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/4burner.jpg" alt="" width="150px" height="150px">
+           Skyrun 4 Burners（4+0)...
+           <h6>&#8358;127,500</h6>
+           <p class="slash">&#8358;150,000</p>
+           <p class="top">-4%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/glamstar.jpg" alt="" width="150px" height="150px">
+           Glamstar 1.5HP Inverter S...
+           <h6>&#8358;380,000</h6>
+           <p class="slash">&#8358;400,000</p>
+           <p class="top">-5%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/ox.jpg" alt="" width="150px" height="150px">
+           Ox Spacetek 18 Inches S...
+           <h6>&#8358;11,932 - &#8358;17,500</h6>
+           <p class="slash">&#8358;25,000</p>
+           <p class="top">-30%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/nine.jpg" alt="" width="150px" height="150px">
+           Nine 1.8L ELECTRIC KETTLE
+           <h6>&#8358;11,429</h6>
+           <p class="slash">&#8358;18,000</p>
+           <p class="top">-37%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/kettle.jpg" alt="" width="150px" height="150px">
+           Syinix 2.2L Electric Kettle ...
+           <h6>&#8358;5,990</h6>
+           <p class="slash">&#8358;7,800</p>
+           <p class="top">-23%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/nexus.jpg" alt="" width="150px" height="150px">
+           Nexus 16 Inches Standing ...
+           <h6>&#8358;19,500</h6>
+           <p class="slash">&#8358;20,475</p>
+           <p class="top">-5%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+
+ <Section class="section17 bg-light">
+  <div class="tarea11">
+    <h6>Pernod Ricard Official Store</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/jame.jpg" alt="" width="150px" height="150px">
+          Jameson Irish Whiskey 20cl
+           <h6>&#8358;6,090</h6>
+           <p class="slash">&#8358;6,390</p>
+           <p class="top">-5%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/whisky.jpg" alt="" width="150px" height="150px">
+           Jameson Irish Whiskey 70cl
+           <h6>&#8358;20,290</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/martell.jpg" alt="" width="150px" height="150px">
+           Martell Cognac Blue Swift...
+           <h6>&#8358;71,950</h6>
+           <p class="slash">&#8358;75,140</p>
+           <p class="top">-5%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/barrel.jpg" alt="" width="150px" height="150px">
+           Jameson Black Barrel 70cl
+           <h6>&#8358;33,810</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/cognac.jpg" alt="" width="150px" height="150px">
+           Martell Cognac VS Single...
+           <h6>&#8358;41,330</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/absolut.jpg" alt="" width="150px" height="150px">
+           Absolut Absolut Vodka R...
+           <h6>&#8358;15,750</h6>
+           <p class="slash">&#8358;16,530</p>
+           <p class="top">-5%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+
+ <section class="section18 bg-light">
+  <div class="tarea12">
+    <h4>Beverages Deals</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/cogy.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/champ.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/soft.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <Section class="section19 bg-light">
+  <div class="tarea13">
+    <h6>Beverages Deal</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/guiness.jpg" alt="" width="150px" height="150px">
+          Guinness Foreign Extra St...
+           <h6>&#8358;17,750</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/malta.jpg" alt="" width="150px" height="150px">
+           Malta Guinness Can 330...
+           <h6>&#8358;11,550</h6>
+           <p class="slash">&#8358;13,620</p>
+           <p class="top">-16%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <a href="#" class="anchor">
+            <img src="./Products/whisky.jpg" alt="" width="150px" height="150px">
+            Jameson Irish Whiskey 70cl
+            <h6>&#8358;20,480</h6>
+         </a>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/martell.jpg" alt="" width="150px" height="150px">
+          Martell Cognac Blue Swift...
+          <h6>&#8358;75,850</h6>
+       </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/henessy.jpg" alt="" width="150px" height="150px">
+           Hennessy VS box 70cl     
+           <h6>&#8358;48,520</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/johine.jpg" alt="" width="150px" height="150px">
+           Johnnie Walker Black Lab...
+           <h6>&#8358;40,680</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+
+ <section class="section20 bg-light">
+  <div class="tarea14">
+    <h4>Fashion Deals</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/WomenFashion.jpg" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/Kid3Fashion.jpg" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/Accessories.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<Section class="section21 bg-light">
+  <div class="tarea15">
+    <h6>Fashion Deal</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/nds.jpg" alt="" width="150px" height="150px">
+          NDS Stone Iced Men"s W...
+           <h6>&#8358;13,990</h6>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/bag.jpg" alt="" width="150px" height="150px">
+           4 Pcs Women Bags Hand...
+           <h6>&#8358;7,419</h6>
+           <p class="slash">&#8358;13,736</p>
+           <p class="top">-46%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <a href="#" class="anchor">
+            <img src="./Products/alagzi.jpg" alt="" width="150px" height="150px">
+            ALagzi Men's Trendy Cas...
+            <h6>&#8358;13,786</h6>
+            <p class="slash">&#8358;26,899</p>
+            <p class="top">-49%</p>
+         </a>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/vejaro.jpg" alt="" width="150px" height="150px">
+          VEJARO G09 2 Pieces Nig...
+          <h6>&#8358;4,680</h6>
+          <p class="slash">&#8358;12,800</p>
+          <p class="top">-63%</p>
+       </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/alliver.jpg" alt="" width="150px" height="150px">
+           ADIDAS Alliver M   
+           <h6>&#8358;51,210</h6>
+           <p class="slash">&#8358;102,420</p>
+           <p class="top">-50%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/menpantsd.jpg" alt="" width="150px" height="150px">
+           Men Pants Trousers Casu...
+           <h6>&#8358;6,654</h6>
+           <p class="slash">&#8358;10,407-&#8358;15,999</p>
+           <p class="top">-58%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+
+ <section class="section22 bg-light">
+  <div class="tarea16">
+    <h4>Top Searched</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/laptops_300x400.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/smartphones_300x400.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/lifestyle_300x400.jpg" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/powerbanks_300x400.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/wristwatches_300x400.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/portable-power_300x400.png" alt="" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<Section class="section23 bg-light">
+  <div class="tarea17">
+    <h6>Handpicked For You</h6>
+    <a href="#"><h6>SEE ALL &#62;</h6></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/mythco.jpg" alt="" width="150px" height="150px">
+          Mythco Sensor LED Night...
+           <h6>&#8358;2,325</h6>
+           <p class="slash">&#8358;4,182</p>
+           <p class="top">-44%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/agapeon.jpg" alt="" width="150px" height="150px">
+           Agapeon Mini Hair Straig...
+           <h6>&#8358;2,856</h6>
+           <p class="slash">&#8358;6,600</p>
+           <p class="top">-57%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <a href="#" class="anchor">
+            <img src="./Products/wireless.jpg" alt="" width="150px" height="150px">
+            Wireless Bluetooth5.0 Ov...
+            <h6>&#8358;5,900</h6>
+            <p class="slash">&#8358;14,476</p>
+            <p class="top">-59%</p>
+         </a>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+          <img src="./Products/uwy.jpg" alt="" width="150px" height="150px">
+          UWY 128GB Pendrive Flas...
+          <h6>&#8358;5,100</h6>
+          <p class="slash">&#8358;9,000</p>
+          <p class="top">-43%</p>
+       </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/guixia.jpg" alt="" width="150px" height="150px">
+           GUIXIA F9 Wireless Finge...
+           <h6>&#8358;4,058</h6>
+           <p class="slash">&#8358;6,216</p>
+           <p class="top">-35%</p>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="anchor">
+           <img src="./Products/biore.jpg" alt="" width="150px" height="150px">
+           Biore UV Aqua Rich Wate...
+           <h6>&#8358;4,164</h6>
+           <p class="slash">&#8358;8,665</p>
+           <p class="top">-52%</p>
+        </a>
+      </div>
+    </div>
+  </div>
+ </Section>
+ <section class="section24 bg-light">
+  <div class="jumia">
+    <h5 class="shops">Jumia Nigeria - Nigeria's No. 1 Shopping Destination</h5>
+    <h5 class="shop">Shop for Everything You Need on Jumia Nigeria</h5>
+    <p class="time">Jumia Nigeria is the largest online shopping website in Nigeria. We offer a platform where customers in any part of Nigeria can find and shop for all they need in one online store and that platform is the Jumia shopping website. On the Jumia mobile app or website, you can shop from the comfort of your home or during work breaks and get everything delivered fast without you having to stress or move an inch. Be it <a href="#" class="inside"><span class="span">fashion,</span></a> <a href="#" class="inside"><span class="span">electronics,</span></a> <a href="#" class="inside"> <span class="span">mobile phones,</span></a> <a href="#" class="inside"><span class="span">computers,</span></a> or your everyday <a href="#" class="inside"><span class="span">groceries</span></a> you can get everything you need on Jumia online store.</p>
+    <p class="time">Have you used the Jumia online store today? Shop now on Jumia to enjoy a seamless online shopping experience. With fast delivery, free returns, and flexible payment options, you are certain to enjoy the convenience of shopping online.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Shop for Original and Quality Items at The Best Prices</h5>
+    <p class="time">Jumia Nigeria prides itself in giving the best prices and the best quality of products you can find anywhere in the country. Our strong partnership with top brands like <a href="#" class="inside"><span class="span">Oraimo,</span></a> <a href="#" class="inside"><span class="span">Samsung,</span></a> <a href="#" class="inside"> <span class="span">Infinix,</span></a> <a href="#" class="inside"><span class="span"> Xiaomi,</span></a> <a href="#" class="inside"><span class="span">Diageo,</span></a> <a href="#" class="inside"><span class="span"></span></a> <a href="#" class="inside"><span class="span"> Adidas,</span></a> <a href="#" class="inside"><span class="span">Nike,</span></a> <a href="#" class="inside"><span class="span">Defacto,</span></a> <a href="#" class="inside"><span class="span">Trendyol,</span></a> etc. guarantees our customers the cheapest prices on original brand products. Beyond that, customers also have exclusive access to the latest product released by these top brands. If you enjoy exclusivity, the <a href="#" class="inside"><span class="span">Jumia Official Store</span></a> is the right place for you. On the Jumia official stores, you can experience product launches and be among the first set of people in Nigeria to own new products. You can also enjoy huge offers on brand days that come with heavy discounts on various products ranging from mobile phones to drinks, clothing items, sneakers, and many more!</p>
+    <p class="time">Explore our official stores today to see a wide range of popular brands that sell directly on our platform and get assured of the best prices and quality of products you buy on Jumia.</p> 
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Shop the Latest Fashion and Trendy Outfits Online</h5>
+    <p class="time">Discover an extensive range of fashion items for women, men, and kids on Jumia. Our <a href="#" class="inside">women's fashion</a> collection includes a diverse selection of clothing such as blouses, pants, and jeans. We also offer a variety of gowns in different lengths and materials to suit your individual style. Additionally, browse through our unique fashion accessories like <a href="#" class="inside">shoes,</a> <a href="#" class="inside">bags,</a> <a href="#" class="inside">jewelry,</a> and sunglasses, all at unbeatable prices.</p>
+    <p class="time">For <a href="#" class="inside">men's fashion,</a> Jumia has an impressive collection of stylish clothing pieces that can make a statement. Find quality men's trousers, shoes, shirts, <a href="#" class="inside">watches</a> and suits at the most affordable prices. Sports enthusiasts can also get their hands on quality gym wear, trendy sneakers, and other sportswear items.</p>
+    <p class="time">At Jumia, we haven't forgotten about the little ones. Browse through our selection of <a href="#" class="inside">baby clothes</a> for boys and girls and their accessories. Shop now on Jumia Nigeria and enjoy an incredible online shopping experience.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Indulge in a Selection of Beauty Products</h5>
+    <p class="time">Our online store also offers you the best beauty products from top brands in the world, e.g. <a href="#" class="inside">Nivea</a> and many others. Many things related to <a href="#" class="inside">health and beauty</a>  e.g. skin care products, makeup and cosmetics, wigs, oral care, hair care, and <a href="#" class="inside">fragrances</a> can be found at our online store.</p>
+    <p class="time">Be certain that whatever we sell on the Jumia website is of good quality. When you shop for your beauty products on Jumia you have successfully avoided getting fake products that can cause unhealthy reactions to your skin or body and without breaking the bank, you can maintain a healthy beauty routine to leave jaws dropping.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Get Your Home Needs on Jumia Nigeria</h5>
+    <p class="time">Jumia is an online supermarket where you can shop for your daily groceries in Nigeria at prices cheaper than others. Check off your <a href="#" class="inside">grocery</a> list and stock up your pantry with a variety of items ranging from rice to cooking oils, wines, Snacks, beverages, household cleaning items, and many others. We also have a section for fresh foods and canned foods. Also, Discover our <a href="#" class="inside">baby shop</a> for all baby essentials from baby food and diapers to toys and educational games.</p>
+    <p class="time">Beyond your daily grocery needs, you can shop on Jumia online for unique home furniture and interior decor pieces to beautify your homes and offices. We have carefully designed outdoor furniture and lighting for your patio and rooftops. We also have generators, inverters, and inverter batteries to power up. There is nothing your home needs that is not on Jumia. You can easily shop from our huge collection of large and small <a href="#" class="inside">appliances</a> such as <a href="#" class="inside">fridges,</a> <a href="#" class="inside">washing machines,</a> <a href="#" class="inside">air conditioners,</a> iron, blenders, air fryers, and many others. Shop for all your home needs and enjoy top deals, prices, and offers you can get nowhere else.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Buy the Latest Smartphones and Electronics From Jumia Nigeria</h5>
+    <p class="time">Shopping on Jumia guarantees that you get the latest mobile phones, tablets, or phablets before anyone else. Buy trusted <a href="#" class="inside">Apple</a> iOS <a href="#" class="inside">iPhones</a> and iPads and quality Android brands like <a href="#" class="inside">Samsung,</a> Tecno, Xiaomi, Infinix, and many others! Unlock the best functionality of your <a href="#" class="inside">smartphones</a> when you buy our amazing phone accessories like AirPods, earphones, powerbank, Bluetooth speakers, durable phone cases, and many more! We have an endless supply of Jumia phone accessories from top brands like Oraimo, Edifier, Samsung, Tecno, JBL, etc.</p>
+    <p class="time">We also have an amazing collection of top computing brands like Hp, Dell, Lenovo, Microsoft, Apple Macbook, and more! You can either buy these computing devices as desktops or <a href="#" class="inside">laptops</a> depending on your choice. Shop for computing accessories like <a href="#" class="inside">printers,</a> scanners, computer components, and monitors to enhance your computer or laptop experience.</p>
+    <p class="time">Our catalog of electronics offers you the highest quality of products from trusted sellers and brands. You can get the latest smart <a href="#" class="inside">televisions</a> and home <a href="#" class="inside">audio devices</a> for your living room. To spice things up, you can get the <a href="#" class="inside">PlayStation</a> consoles or <a href="#" class="inside">Xbox</a> consoles especially if you love gaming during your leisure time.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Enjoy Top Deals and Discounts when Shopping on Jumia Nigeria Online Store</h5>
+    <p class="time">There are limitless offers and <a href="#" class="inside">deals</a> on the Jumia Nigeria online store. Enjoy up to 80% discount on selected items of the day during the <a href="#" class="inside">flash sales.</a>  We also have <a href="#" class="inside">Half Price Deals</a> where our shoppers buy selected products like mobile phones, laptops, phone accessories, and clothing pieces for half the original price. Get the best prices you can find on the <a href="#" class="inside">best deals</a> page.</p>
+    <p class="time">Enjoy other weekly offers that run all year long, which means that every time you shop on the Jumia website, you are sure to enjoy mouth-watering discounts and deals that will help you save more and get the most affordable prices no one else can give you. To know more about these offers and deals, you can subscribe to our push notifications and newsletters, read our <a href="#" class="inside">blog,</a>and follow us on all our social media accounts.</p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Experience Fast Delivery and Online Shopping Convenience</h5>
+    <p class="time">Get your cart delivered to you within 24 hrs when you buy items with the <a href="#" class="inside">Jumia Express</a> tag, for selected products, you are also assured of free delivery and have your products delivered to you at no extra cost! Also, we have products that you can ship from abroad under the <a href="#" class="inside">Jumia Global</a> catalog. This means that you can order various items from outside the country and get them delivered to your doorstep without hassles. </p>
+  </div>
+  <div class="jumia">
+    <h5 class="shop">Frequently Asked Questions (FAQs)</h5>
+    <h6 class="head">What Payment Options are Available on Jumia?</h6>
+    <p class="time">You can either pay online or pay on delivery when you shop from us. With out payment solution called JumiaPay, you can conveniently pay online or on delivery with your cards (MasterCard, Visa and Verve), bank transfers and USSD.</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">Can I Return the Items I Bought From Jumia?</h6>
+    <p class="time">Yes, you can return items you bought for free and get refunded as soon as possible! We have a refund policy that grants you 7 days to return <span class="span">ALL</span> eligible items bought from the official store and other sellers on Jumia Nigeria.</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">When is the Next Jumia Black Friday?</h6>
+    <p class="time"><span class="span">Jumia Black Friday</span> happens in November. Jumia is the pioneer of Black Friday in Nigeria, so expect us to do it best! It comes with the biggest discount and offers on various categories of products like fashion, phones, computers, home appliances, electronics and many more! We also have various exciting and engaging activities like the treasure hunt and games our customers love to play.</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">Can I get Free Delivery on All my Orders?</h6>
+    <p class="time">Customers in Lagos, Abuja, Ibadan,Warri,Benin, Abeokuta, Akure and Portharcourt enjoy <span class="span">free delivery</span> on items with the free delivery tag. Free delivery does not apply to large items like refrigerators, huge TVs, washing machines and others.</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">What Is the Jumia Customer Care Line?</h6>
+    <p class="time">We have a dedicated team that is always available to make sure your shopping experience on Jumia is effortless. Simply dial 02018881106 to reach out to us for complaints and other inquiries. If you would like to place an order, please call us at 0700-600-0000. You can also chat with us on the Jumia app if you find that more convenient. Whatever you do, we are always available to help.</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">How Can I Become a Seller on Jumia?</h6>
+    <p class="time">You can partner with Jumia as a seller on the website. All you need to do is <a href="#" class="inside"><span class="span">register</span></a> and follow the necessary steps. With our large customer base, we can help you reach a wider audience and sell many of your products to our customers</p>
+  </div>
+  <div class="jumia">
+    <h6 class="head">What Other Events are Celebrated in Jumia?</h6>
+    <p class="time">Aside the Jumia Black Friday, the <a href="#" class="inside"><span class="span">Jumia Tech Week</span></a> is another big event we celebrate in Jumia Nigeria. The goal of the Jumia Tech Week is to help customers have access to the latest technology at the cheapest prices they can get. It happens in the month of March of every year and lasts at least two weeks.</p>
+    <p class="time">Aside these major events, we also have Ramadan sales, Easter sales, Christmas sales and other seasonal celebrations we make sure our customers enjoy on Jumia.</p>
+    <p class="time">Shop now and enjoy unlimited offers, discounts and the best online shopping experience!</p>
+  </div>
+ </section>
+ <section class="section25">
+  <div class="footer">
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col jumiaa">
+            <img src="./Products/jumia logo3.png" alt="" width="200px" height="100px">
+          </div>
+          <div class="col team">
+            <h6 class="foot">New to Jumia?</h6>
+            <p class="foottext">Subscribe to our newsletter to get updates on our latest offers!</p>
+            <div class="form d-flex">
+              <form class="email" role="email" autocomplete="on">
+                <i class="fa-regular fa-envelope envelope"></i> <input class="formcontrol me-2" type="email" placeholder="Enter E-mail Address" aria-label="email" id="mail">
+              </form>
+              <button class="btn1" type="submit" id="button1">MALE</button>
+              <button class="btn2" type="submit" id="button2">FEMALE</button>
+            </div>
+            <form autocomplete="on">
+              <div style="display: flex; align-items: center;  padding-top: 35px;">
+                <input type="checkbox" id="terms" name="terms"  class="custom-checkbox" value="agree" style="transform: scale(1.5); margin-right: 8px;">
+                <label for="terms" class="terms">I agree to Jumia’s Privacy and Cookie Policy. You can unsubscribe from newsletters at any time.</label>
+              </div>
+            </form>
+            <a href="#" class="end"><p class="legal">I accept the Legal Terms</p></a>
+          </div>
+          <div class="col">
+            <div class="footer-download">
+              <div class="footer-left">
+                <img src="./Products/jumia logo_files/images.png" alt="Jumia Logo" class="app-icon">
+                <div class="footer-text">
+                  <p class="app-title">DOWNLOAD JUMIA FREE APP</p>
+                  <p class="app-subtitle">Get access to exclusive offers!</p>
+                </div>
+              </div>
+              <div class="app-buttons">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col first">
+            <h6 class="foot">NEED HELP?</h6>
+            <a href="#" class="last"><p class="foott">Chat with us</p></a>
+            <a href="#" class="last"><p class="foott">Help Center</p></a>
+            <a href="#" class="last"><p class="foott">Contact Us</p></a>
+            <h6 class="foot two">USEFUL LINKS</h6>
+            <a href="#" class="last"><p class="foott">Service Center</p></a>
+            <a href="#" class="last"><p class="foott">How to shop on Jumia?</p></a>
+            <a href="#" class="last"><p class="foott">Delivery options and timelines</p></a>
+            <a href="#" class="last"><p class="foott">How to return a product on Jumia?</p></a>
+            <a href="#" class="last"><p class="foott">Corporate and bulk purchases</p></a>
+            <a href="#" class="last"><p class="foott">Report a Product</p></a>
+            <a href="#" class="last"><p class="foott">Dispute Resolution Policy</p></a>
+            <a href="#" class="last"><p class="foott">Returns & Refund Timeline</p></a>
+            <a href="#" class="last"><p class="foott">Return Policy</p></a>
+            <a href="#" class="last"><p class="foott">Pickup Stations</p></a>   
+            <h6 class="foot toon">JOIN US ON</h6>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>         
+          </div>
+          <div class="col second">
+            <h6 class="foot">ABOUT JUMIA</h6>
+            <a href="#" class="last"><p class="foott">About us</p></a>
+            <a href="#" class="last"><p class="foott">Jumia careers</p></a>
+            <a href="#" class="last"><p class="foott">Jumia Express</p></a>
+            <a href="#" class="last"><p class="foott">Terms and Conditions</p></a>
+            <a href="#" class="last"><p class="foott">Privacy Notice</p></a>
+            <a href="#" class="last"><p class="foott">Jumia Store Credit Terms & Conditions</p></a>
+            <a href="#" class="last"><p class="foott">Jumia Payment Information Guidelines</p></a>
+            <a href="#" class="last"><p class="foott">Cookie Notice</p></a>
+            <a href="#" class="last"><p class="foott">Jumia Global</p></a>
+            <a href="#" class="last"><p class="foott">Official Stores</p></a>
+            <a href="#" class="last"><p class="foott">Flash Sales</p></a>
+            <div class="partners-section">
+             <p class="partners-title w-100">PAYMENT METHODS & DELIVERY PARTNERS</p>
+              <div class="partners-icons d-flex flex-wrap align-items-center gap-2">
+                <i class="fab fa-cc-mastercard icon"></i>
+                <i class="fab fa-cc-visa icon"></i>
+                <i class="fab fa-cc-amex icon"></i>
+                <i class="fas fa-credit-card icon"></i> 
+                <i class="fas fa-truck icon"></i> 
+                <i class="fas fa-shipping-fast icon"></i>
+                <i class="fas fa-box icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col third">
+            <h6 class="foot">MAKE MONEY WITH JUMIA</h6>
+            <a href="#" class="last"><p class="foott">Sell on Jumia</p></a>
+            <a href="#" class="last"><p class="foott">Vendor hub</p></a>
+            <a href="#" class="last"><p class="foott">Become a Sales Consultant</p></a>
+            <a href="#" class="last"><p class="foott">Our Blog</p></a>
+          </div>
+          <div class="col forth">
+            <h6 class="foot sad">JUMIA INTERNATIONAL</h6>
+            <div class="row">
+             <div class="col-6">
+               <ul class="list-unstyled">
+                 <a href="#" class="last"><li>Algeria</li></a>
+                 <a href="#" class="last"><li>Egypt</li></a>
+                 <a href="#" class="last"><li>Ghana</li></a>
+                 <a href="#" class="last"><li>Ivory Coast</li></a>
+               </ul>
+             </div>
+             <div class="col-6">
+               <ul class="list-unstyled">
+                 <a href="#" class="last"><li>Kenya</li></a>
+                 <a href="#" class="last"><li>Morocco</li></a>
+                 <a href="#" class="last"><li>Senegal</li></a>
+                 <a href="#" class="last"><li>Uganda</li></a>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section26">
+    <div class="col ella">
+      
+    </div>
+    <div class="col emma">
+      
+    </div>
+    <div class="col tomi">
+      
+    </div>
+ </section>
+
+
+
+
+  <script src="./Jumia.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>
